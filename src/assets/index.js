@@ -33,7 +33,12 @@ import tm from './tm.jpg'
 import ff from './friend-finder.jpg'
 import cloud from './Cloud.jpg'
 
+import tg from './tg.png'
+import whatsapp from './wts.png'
+
 export {
+	whatsapp,
+	tg,
 	logo,
 	backend,
 	creator,
