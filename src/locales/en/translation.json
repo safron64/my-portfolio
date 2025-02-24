@@ -1,0 +1,155 @@
+{
+    "nav": {
+        "about": "About",
+        "work": "Work",
+        "contact": "Contact"
+    },
+    "about": {
+        "introduction": "Introduction",
+        "overview": "Overview.",
+        "description": "I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!"
+    },
+    "services": {
+        "frontendDeveloper": "Frontend Developer",
+        "reactNativeDeveloper": "React Native Developer",
+        "fullStackDeveloper": "Full-Stack Developer"
+    },
+    "technologies": {
+        "html5": "HTML 5",
+        "css3": "CSS 3",
+        "javascript": "JavaScript",
+        "typescript": "TypeScript",
+        "reactjs": "React JS",
+        "redux": "Redux",
+        "tailwindcss": "Tailwind CSS",
+        "nodejs": "Node.js",
+        "git": "Git",
+        "docker": "Docker",
+        "figma": "Figma"
+    },
+    "hero": {
+        "greeting": "Hi",
+        "intro": "I'm",
+        "description": {
+            "part1": "I develop mobile app, user",
+            "part2": "interfaces and web applications"
+        }
+    },
+    "experiences": {
+        "sectionSubText": "What I have done so far",
+        "sectionHeadText": "Work Experience.",
+        "synergy": {
+            "title": "Mobile Developer",
+            "date": "December 2025 - Present",
+            "points": [
+                "Developed an MVP collaboration app (Synergy) for Android and iOS using React Native, featuring a Node.js (Express) and PostgreSQL backend.",
+                "Integrated AI-powered matching, chat with voice messages, file sharing, and interactive portfolios for creators.",
+                "Focused on security, user-friendly design, and a structured workflow for diverse fields—from music and film to technology and startups."
+            ]
+        },
+        "realeasy": {
+            "title": "Full-Stack Developer",
+            "companyName": "Realeasy",
+            "date": "September 2024 - Present",
+            "points": [
+                "Developed and implemented a Telegram bot using Node.js with OpenAI API and PostgreSQL integration, increasing client interaction efficiency by 30%.",
+                "Designed a Telegram mini-app using React and TypeScript, improving system performance and response time.",
+                "Configured CI/CD pipeline for automatic deployment to Heroku, reducing release time for new versions.",
+                "Developed a smart chat application for Android and iOS using React Native and Expo. Utilizes OpenAI API for natural conversations and Zustand for efficient state management."
+            ]
+        },
+        "apusher": {
+            "title": "Frontend Developer",
+            "companyName": "Apusher",
+            "date": "June 2024 - September 2024",
+            "points": [
+                "Set up ESLint and Prettier linters, enhancing code quality and reducing errors.",
+                "Developed a mobile application using React Native, expanding the user base through improved accessibility.",
+                "Integrated frontend with backend, ensuring seamless data synchronization and faster loading times."
+            ]
+        },
+        "webStudio": {
+            "title": "Web Developer",
+            "companyName": "Web Studio",
+            "date": "July 2023 - July 2024",
+            "points": [
+                "Created responsive and cross-browser web pages (25+), improving SEO and increasing website traffic by 20%.",
+                "Developed interactive UI components using ReactJS, enhancing user experience and engagement.",
+                "Optimized existing code by modernizing JavaScript functions, reducing page load time by 30%."
+            ]
+        }
+    },
+    "testimonials": {
+        "andreyK": {
+            "testimonial": "An excellent developer who helped us automate processes with a Telegram bot.",
+            "name": "Andrey K.",
+            "designation": "CTO",
+            "company": "Realeasy"
+        },
+        "olgaV": {
+            "testimonial": "Nikita did an amazing job with the frontend of our mobile app, the performance is outstanding!",
+            "name": "Olga V.",
+            "designation": "Product Manager",
+            "company": "Apusher"
+        },
+        "ivanS": {
+            "testimonial": "Website performance significantly improved after his optimizations.",
+            "name": "Ivan S.",
+            "designation": "CEO",
+            "company": "Web Studio"
+        }
+    },
+    "projects": {
+        "sectionSubText": "My work",
+        "sectionHeadText": "Projects.",
+        "description": " Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+        "cloudStorage": {
+            "name": "Cloud Storage",
+            "description": "A powerful cloud storage solution with a modern Next.js frontend and a NestJS backend. Features secure file management, user authentication, and seamless integration with PostgreSQL.",
+            "tags": [
+                "Next.js",
+                "TypeScript",
+                "NestJS",
+                "PostgreSQL"
+            ]
+        },
+        "friendFinder": {
+            "name": "Friend Finder",
+            "description": "An innovative web app for making new connections. Built with React.js and Node.js, featuring real-time chat, secure authentication, and a scalable Dockerized backend.",
+            "tags": [
+                "React.js",
+                "Node.js",
+                "MongoDB",
+                "Docker"
+            ]
+        },
+        "tomorrowMe": {
+            "name": "TomorrowMe",
+            "description": "A smart AI-powered chat app built with React Native & Expo. Leverages OpenAI API for natural language conversations, with Zustand for smooth state management.",
+            "tags": [
+                "React Native",
+                "Expo",
+                "OpenAI API",
+                "Zustand"
+            ]
+        }
+    },
+    "contact": {
+        "getInTouch": "Get in touch",
+        "title": "Contact",
+        "nameLabel": "Your Name",
+        "namePlaceholder": "What's your good name?",
+        "emailLabel": "Your Email",
+        "emailPlaceholder": "What's your web address?",
+        "messageLabel": "Your Message",
+        "messagePlaceholder": "What you want to say?",
+        "send": "Send",
+        "sending": "Sending...",
+        "successMessage": "Thank you. I will get back to you as soon as possible.",
+        "errorMessage": "Ahh, something went wrong. Please try again."
+    },
+    "feedbacks": {
+        "sectionSubText": "What others say",
+        "sectionHeadText": "Testimonials."
+    }
+}

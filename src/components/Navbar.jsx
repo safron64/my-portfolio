@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import { useTranslation } from 'react-i18next'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
@@ -9,19 +9,17 @@ const Navbar = () => {
 	const [active, setActive] = useState('')
 	const [toggle, setToggle] = useState(false)
 	const [scrolled, setScrolled] = useState(false)
+	const { t, i18n } = useTranslation()
+
+	const handleLanguageToggle = () => {
+		i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')
+	}
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollTop = window.scrollY
-			if (scrollTop > 100) {
-				setScrolled(true)
-			} else {
-				setScrolled(false)
-			}
+			setScrolled(window.scrollY > 100)
 		}
-
 		window.addEventListener('scroll', handleScroll)
-
 		return () => window.removeEventListener('scroll', handleScroll)
 	}, [])
 
@@ -56,6 +54,7 @@ const Navbar = () => {
 					</p>
 				</Link>
 
+				{/* Основное меню */}
 				<ul className="list-none hidden sm:flex flex-row gap-10">
 					{navLinks.map(nav => (
 						<li
@@ -67,11 +66,22 @@ const Navbar = () => {
 							} hover:text-white text-[18px] font-medium cursor-pointer`}
 							onClick={() => setActive(nav.title)}
 						>
-							<a href={`#${nav.id}`}>{nav.title}</a>
+							<a href={`#${nav.id}`}>{t(nav.title)}</a>
 						</li>
 					))}
 				</ul>
 
+				{/* Переключатель языка */}
+				<div className="list-none hidden flex items-center gap-4 sm:flex">
+					<button
+						onClick={handleLanguageToggle}
+						className="text-white text-2xl focus:outline-none"
+					>
+						{i18n.language === 'en' ? '🇺🇸' : '🇷🇺'}
+					</button>
+				</div>
+
+				{/* Мобильное меню */}
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					<img
 						src={toggle ? close : menu}
@@ -99,9 +109,17 @@ const Navbar = () => {
 										setActive(nav.title)
 									}}
 								>
-									<a href={`#${nav.id}`}>{nav.title}</a>
+									<a href={`#${nav.id}`}>{t(nav.title)}</a>
 								</li>
 							))}
+							<li className="flex items-center gap-4 sm:flex">
+								<button
+									onClick={handleLanguageToggle}
+									className="text-white text-2xl focus:outline-none"
+								>
+									{i18n.language === 'en' ? '🇺🇸' : '🇷🇺'}
+								</button>
+							</li>
 						</ul>
 					</div>
 				</div>
